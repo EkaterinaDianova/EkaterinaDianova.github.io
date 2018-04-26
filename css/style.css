@@ -1355,9 +1355,93 @@
 
         }
 
-
         /* Landscape phones and smaller */
-        @media (max-width: 480px) {}
+        @media (max-width: 480px) {
+            .navbar-tel {
+            display: none;
+        }
+
+
+        .main-navigation {
+            padding: 26px 25px 20px;
+        }
+
+        .navbar-contact {
+            display: none;
+        }
+
+        .toggle-mnu {
+            position: absolute;
+            display: block;
+            top: 6px;
+            right: 10px;
+        }
+
+        .site-navigation-hidden {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            right: 0;
+            top: 77px;
+            z-index: 10;
+            padding: 20% 0;
+            font-size: 4em;
+            text-align: center;
+            display: none;
+        }
+
+        .site-navigation-hidden li {
+            display: block;
+            margin-bottom: 2em;
+        }
+
+        .site-navigation-hidden li:last-child {
+            margin-bottom: 0;
+        }
+
+        .main-title {
+            font-size: 61px;
+        }
+
+        .intro-description {
+            font-size: 18px;
+        }
+
+        .subtitle-description {
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .section-paragraph {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .btn-wrapper {
+            margin: auto;
+        }
+
+        .about-border-img {
+            margin-top: 40px;
+        }
+
+        .serv-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .videoPoster {
+            height: 53%;
+        }
+
+        .video-foreground {
+            padding-bottom: 300px;
+        }
+        }
     }
     /*-------------------------------------------------------------------------------
      2: Post Image 
