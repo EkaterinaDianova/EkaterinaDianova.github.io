@@ -29,12 +29,12 @@
         <nav class="main-navigation" id="nav">
           <div class="container">
             <div class="row">
-              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 d-flex align-items-center flex-nowrap">
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-2 d-flex align-items-center flex-nowrap">
                   <a class="logo-header" href="#">
                       <img src="img/logo_white.png" alt="logo">
                   </a>
               </div>
-              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 d-flex justify-content-end align-items-center">
+              <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-xs-9 d-flex justify-content-end align-items-center">
                  <ul class="site-navigation d-none d-lg-block">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -359,14 +359,23 @@
         <div id="myModal" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
+                      <div class="success-modal">
+                             <span>Congratulations! Your message has been sent.</span>
+                        </div> 
                     <div class="modal-header">
                         <button class="close" type="button" data-dismiss="modal">×</button>
-                        <h4 class="modal-title">Contact us</h4>
+                        <h4 class="modal-title">Get your number here</h4>
                     </div>
-                    <div class="modal-body">Just write your phone and we call in 5 minute</div>
-                    <form id="call-form">
-                        <input type="text" name="name" placeholder="Enter your name here">
-                        <input type="text" name="phone" placeholder="Enter your phone here">
+                    <div class="modal-body">Welcome back, just write your phone and we call in 5 minute</div>
+                    <form id="call-form"> 
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Site Name"> <!--Your site name-->
+                        <input type="hidden" name="admin_email" value="layraldo@gmail.com"> <!--put your contact e-mail here-->
+                        <input type="hidden" name="form_subject" value="Form Subject"> <!--Name of letter-->
+                        <!-- END Hidden Required Fields -->
+
+                        <input class="call-control" type="text" name="name" placeholder="Enter your name here">
+                        <input class="call-control" type="text" name="phone" placeholder="Enter your phone here">
                         <div class="modal-footer">
                             <button class="button-main button-modal" type="button" data-dismiss="modal">Submit</button>
                         </div>

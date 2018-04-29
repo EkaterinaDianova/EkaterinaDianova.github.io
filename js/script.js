@@ -41,11 +41,6 @@ $(".toggle-mnu").click(function() {
   menu.toggleClass('menu-active');
 });
 });
-
-/*-------------------------------------------------------------------------------
-    Modal
-  -------------------------------------------------------------------------------*/
-$("#button-main").magnificPopup();
 });
 
 
@@ -69,7 +64,7 @@ $(document).ready(function(){
 });
 
   /*-------------------------------------------------------------------------------
-    Filter
+    Filter Blog
   -------------------------------------------------------------------------------*/
 
 $('#filters-blog a').click(function(){
@@ -83,15 +78,6 @@ $('#filters-blog a').click(function(){
   return false;
 });
 
-
-$(function() {
-  $('.post-wrapper').matchHeight({
-    byRow: true,
-    property: 'height',
-    target: null,
-    remove: false
-  });
-});
 
 /*-------------------------------------------------------------------------------
     Sticky Navbar
@@ -139,3 +125,23 @@ $(document).ready(function() {
     return false;
   })
 });
+
+/*-------------------------------------------------------------------------------
+   Ajax E-mail Send
+  -------------------------------------------------------------------------------*/
+
+  $(".call-form").submit(function () {
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: th.serialize()
+    }).done(function() {
+      $(th).find(".success-modal").addClass('success-active').css('display', 'flex').hide().fadeIn();
+      setTimeout(function () {
+        $(th).find('success-modal').removeClass('success-active').fadeOut();
+        th.trigger("reset");
+      }, 3000);
+    });
+    return false;
+  });

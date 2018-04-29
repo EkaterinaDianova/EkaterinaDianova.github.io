@@ -999,7 +999,7 @@
 
     .modal-content {
         background-color: #292728;
-        padding: 50px 80px;
+        padding: 50px 55px;
         color: #ffffff;
         box-sizing: border-box;
         text-align: center;
@@ -1009,40 +1009,81 @@
     .modal-footer {
         border-top: none;
         justify-content: center;
+        padding: 0;
     }
 
     .modal-body {
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 300;
+        padding: 0;
+        margin-bottom: 48px;
     }
 
     .modal-header {
         border-bottom: none;
         text-align: center;
         justify-content: center;
+        padding: 0;
+        margin-bottom: 8px;
     }
 
     .modal-header .close {
         margin: 0;
         padding: 0;
         position: absolute;
-        right: 27px;
-        top: 27px;
+        right: 18px;
+        top: 10px;
         cursor: pointer;
         background-color: transparent;
         border: none;
         text-shadow: none;
         color: #ffffff;
-        font-size: 35px;
+        font-size: 24px;
         font-weight: 300;
     }
 
     .button-modal {
         border: 1px solid #363636;
+        background-color: #b99275;
+        padding: 4px 26px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    #call-form input {
+    .call-control {
         margin-bottom: 20px;
+        background-color: #363636;
+        border: 1px solid #363636;
+    }
+
+    .success-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        z-index: 50;
+    }
+
+    .success-modal span {
+        margin: auto;
+    }
+
+    .success-modal ~ * {
+        transition: all .5s ease;
+    }
+
+    .success-active ~ * {
+        opacity: .5;
+        filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        z-index: 50;
     }
 
      /* Scroll anchor */
@@ -1264,6 +1305,7 @@
         .video-foreground {
             padding-bottom: 300px;
         }
+    }
 
         @media (max-width: 576px) {
 
@@ -1271,7 +1313,6 @@
         .navbar-tel {
             display: none;
         }
-
 
         .main-navigation {
             padding: 26px 25px 20px;
@@ -1356,10 +1397,12 @@
         }
 
         /* Landscape phones and smaller */
+
         @media (max-width: 480px) {
+
             .navbar-tel {
             display: none;
-        }
+           }
 
 
         .main-navigation {
@@ -1442,6 +1485,21 @@
             padding-bottom: 300px;
         }
         }
+
+        @media (min-width: 320px) and (max-width: 414px) {
+
+            .navbar-tel {
+            display: none;
+            }
+
+            .main-title {
+                font-size: 32px;
+            }
+
+            .intro-description {
+                font-size: 15px;
+            }
+
     }
     /*-------------------------------------------------------------------------------
      2: Post Image 
