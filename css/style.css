@@ -562,7 +562,7 @@
     /*Service*/
 
     .services {
-        padding-bottom: 403px;
+        padding-bottom: 88px;
     }
 
     .serv-wrapper {
@@ -599,15 +599,24 @@
     }
     /*VideoYoutube*/
 
-    .video-about {
-        margin-top: -307px;
+    .video-center {
+        padding-bottom: 74px;
+        text-align: center;
         position: relative;
     }
 
-    .video-foreground {
+    .video-about {
         position: relative;
-        height: 0;
+        background-color: #000000;
+    }
+
+    .video-foreground {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
         padding-bottom: 625px;
+        background-size: cover;
     }
 
     .videoIframe {
@@ -627,7 +636,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../img/videoposter.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -695,25 +703,27 @@
         -moz-transition-delay: 0s, 800ms;
         transition-delay: 0s, 800ms;
     }
+
+    .video-text {
+        margin-top: 34px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .video-text span {
+        color: #292728;
+        font-weight: 500;
+    }
+
+
     /*Portfolio*/
 
-    .p-0 {
-        padding: 0;
-    }
-
     .portfolio {
+        text-align: center;
         background-color: #252525;
         padding-bottom: 88px;
-    }
-
-    .portfolio-description {
-        margin-top: 88px;
-    }
-
-    .portfolio-text {
-        display: flex;
-        align-items: center;
-        margin-bottom: 88px;
+        padding-top: 88px;
     }
 
     .subtitle-description-white,
@@ -725,22 +735,48 @@
         display: block;
     }
 
-    .section-paragraph-gray {
-        color: #e6e7e8;
+    .portfolio-text {
+        margin-bottom: 73px;
     }
 
-    .image-style {
-        position: relative;
-        animation-duration: 1s;
-        animation-delay: .5s;
+    .grid-portfolio {
+        margin-top: 75px;
     }
 
-    .image-style img {
+    .project-item {
+       width: 25%;
+       animation-duration: 1s;
+       animation-delay: .5s;
+       position: relative;
+       overflow: hidden;
+    }
+
+    .portfolio-filter {
+        margin-bottom: 50px;
+    }
+
+    .portfolio-filter a {
+        color: #505050;
+    }
+
+    .project-item img {
         width: 100%;
+        display: block;
+    height: auto;
+    -webkit-transition: all 1s ease;;
+    -moz-transition: all 1s ease;;
+    transition: all 1s ease;;
+    max-width: 100%;
     }
 
-    .image-style:hover .project-description {
+    .project-item:hover .project-description {
         opacity: 1;
+    }
+
+    .project-item:hover img {
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        transform: scale(1.4);
     }
 
     .project-description {
@@ -767,6 +803,15 @@
         text-transform: uppercase;
         line-height: 1.5;
         font-family: "Poppins";
+        transition: all .5s ease;
+        transform: scale(0.8);
+        transition-delay: .3s;
+    }
+
+    .project-description p {
+        transition: all .5s ease;
+        transform: scale(0.8);
+        transition-delay: .3s;
     }
 
     .button-project {
@@ -1309,6 +1354,10 @@
 
         @media (max-width: 576px) {
 
+        .logo-header {
+            display: inline-block;
+        }
+
 
         .navbar-tel {
             display: none;
@@ -1316,10 +1365,6 @@
 
         .main-navigation {
             padding: 26px 25px 20px;
-        }
-
-        .navbar-contact {
-            display: none;
         }
 
         .toggle-mnu {
@@ -1357,7 +1402,12 @@
         }
 
         .intro-description {
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        .about-us {
+            padding-top: 57px;
+            padding-bottom: 57px;
         }
 
         .subtitle-description {
@@ -1371,7 +1421,11 @@
 
         .section-paragraph {
             text-align: center;
-            font-size: 13px;
+            font-size: 14px;
+        }
+
+        .about-us-text {
+            margin-top: 14px;
         }
 
         .btn-wrapper {
@@ -1391,7 +1445,7 @@
         }
 
         .video-foreground {
-            padding-bottom: 300px;
+            padding-bottom: 600px;
         }
 
         }
@@ -1684,7 +1738,6 @@
     }
 
     .button-group a {
-        color: #292728;
         margin-right: 10px;
         font-size: 15px;
         font-weight: 500;

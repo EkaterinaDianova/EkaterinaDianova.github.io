@@ -45,7 +45,7 @@ $(".toggle-mnu").click(function() {
 
 
   /*-------------------------------------------------------------------------------
-    Blog masonry
+    Blog masonry and Portfolio
   -------------------------------------------------------------------------------*/
 
 
@@ -63,11 +63,27 @@ $(document).ready(function(){
     });
 });
 
+
+$(document).ready(function(){
+    var $container = $('.grid-portfolio');
+    $container.isotope({
+        filter: '*',
+        transitionDuration: 0,
+        itemSelector: '.project-item', 
+        percentPosition: true,
+        animationOptions: 'best-available',
+        masonry: {
+           columnWidth: '.grid-sizer'
+        }
+    });
+});
+
+
   /*-------------------------------------------------------------------------------
-    Filter Blog
+    Filter Blog and Portfolio
   -------------------------------------------------------------------------------*/
 
-$('#filters-blog a').click(function(){
+$('#filters a').click(function(){
     $('.button-group .is-cheked').removeClass('is-cheked');
     $(this).closest('a').addClass('is-cheked');
     var selector = $(this).attr('data-filter');
@@ -77,6 +93,12 @@ $('#filters-blog a').click(function(){
     });
   return false;
 });
+
+
+/*-------------------------------------------------------------------------------
+    Portfolio Item Hover
+  -------------------------------------------------------------------------------*/
+
 
 
 /*-------------------------------------------------------------------------------
