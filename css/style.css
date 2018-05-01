@@ -326,7 +326,7 @@
 
     .mw-wrapper {
         padding-top: 220px;
-        z-index: 9;
+        z-index: 8;
         position: absolute;
         left: 50%;
         bottom: 50px;
@@ -443,7 +443,6 @@
 
     .link-underline {
         color: #b99275;
-        display: block;
         position: relative;
         font-size: 12px;
         text-transform: uppercase;
@@ -894,11 +893,6 @@
     .blog {
         margin-top: 88px;
         margin-bottom: 88px;
-    }
-
-    .blog-new {
-        animation-duration: 1s;
-        animation-delay: .5s;
     }
 
     .blog-text {
@@ -1394,6 +1388,7 @@
 
         .subtitle-description {
             text-align: center;
+            font-size: 12px;
         }
 
         .section-title {
@@ -1452,14 +1447,19 @@
             padding: 40px 20px;
         }
 
+        .blog {
+            margin-bottom: 57px;
+        }
+
         .blog-text {
             margin: 0;
         }
 
         .blog-new {
             text-align: center;
-            margin: 25px 0;
+            margin-top: 25px;
             display: flex;
+            align-self: center;
             flex-wrap: wrap;
             flex-direction: column;
         }
@@ -1471,6 +1471,11 @@
         .blog-footer {
             align-items: center;
             width: 100%;
+        }
+
+        .new-link {
+            float: none;
+            margin-left: 5px;
         }
 
         }
@@ -1749,7 +1754,7 @@
     .post-news-list {
         margin-top: 50px;
     }
-    /* 3: Blog Grid Image*/
+    /* 3:  Grid Image*/
 
     .content-blog {
         padding-top: 111px;
