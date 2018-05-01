@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 offset-md-1">
-                    <img alt="image" class="about-border-img img-fluid" src="img/about-us.jpg">
+                    <img alt="image" class="border-img img-fluid" src="img/about-us.jpg">
                 </div>
             </div>
         </div>
@@ -133,12 +133,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
-                    <div class="video-about">
-                        <div class="video-foreground" style="background-image: url(img/videoposter.jpg);">
-                            <iframe class="videoIframe src="" data-src="https://www.youtube.com/embed/ctvlUvN6wSE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=ctvlUvN6wSE" frameborder="0" allowfullscreen allowTransparency="true">
-                            </iframe>
-                            <button class="videoPoster"></button>
-                        </div>
+                    <div class="video-about border-img-video">
+                        <div class="video-foreground" style="background-image: url(img/videoposter.jpg); opacity: 1;"></div>
+                        <iframe src="" data-src="https://www.youtube.com/embed/ctvlUvN6wSE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=ctvlUvN6wSE" frameborder="0" allowfullscreen allowTransparency="true"></iframe>
+                        <button class="videoPlay"></button>
                     </div>
                 </div>
                 <p class="section-paragraph video-text">This is a central image that describe <span>main theme</span> of the video. <a class="post-link" href="#">Try now.</a></p>
@@ -158,56 +156,56 @@
                 <a href="#" class="btn-filter" data-filter=".branding">Branding</a>               
             </div>
             <div class="grid-portfolio">
-               <div class="project-item design grid-sizer col-xs-3">
+               <div class="project-item design grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-1.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Web design, UI</p>
                 </div>
             </div>
-             <div class="project-item branding grid-sizer col-xs-3">
+             <div class="project-item branding grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-2.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Branding concept</p>
                 </div>
             </div>
-             <div class="project-item design grid-sizer col-xs-3">
+             <div class="project-item design grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-3.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Design logo</p>
                 </div>
             </div>
-             <div class="project-item design grid-sizer col-xs-3">
+             <div class="project-item design grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-4.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Interior Design</p>
                 </div>
             </div>
-             <div class="project-item branding grid-sizer col-xs-3">
+             <div class="project-item branding grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-5.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Brand design, usability</p>
                 </div>
             </div>
-             <div class="project-item design grid-sizer col-xs-3">
+             <div class="project-item design grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-6.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Design, packaging</p>
                 </div>
             </div>
-             <div class="project-item packaging grid-sizer col-xs-3">
+             <div class="project-item packaging grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-7.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
                     <p>Package design</p>
                 </div>
             </div>
-             <div class="project-item packaging grid-sizer col-xs-3">
+             <div class="project-item packaging grid-sizer">
                  <img alt="image" class="img-fluid" src="img/portfolio-image-8.jpg">
                  <div class="project-description">
                     <h3>Modern chair design</h3>
@@ -218,8 +216,8 @@
 </div> 
 </section>
 <section class="reviews">
-    <div class="container reviews-inner align-items-center">
-        <div class="row">
+    <div class="container">
+        <div class="reviews-inner align-items-center">
             <div class="col-md-10 offset-md-1">
                 <div class="owl-carousel carousel-reviews">
                     <div class="review-content">
@@ -255,38 +253,44 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-12">
                 <article class="blog-new">
                     <img src="img/new1.jpg">
                     <a href="#" class="subtitle-description new-category">last news</a>
                     <a href="blog.html"><h5 class="new-header">September nights<br> in huge home</h5></a>
                     <p class="section-paragraph">Flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mout.
                     </p>
-                    <time datetime="<2018-05-23T08:23:11+07:00>">May 7 - 2018</time>
-                    <a class="link-underline new-link" href="blog.html">Read more</a>
+                    <div class="blog-footer">
+                        <time datetime="<2018-05-23T08:23:11+07:00>">May 7 - 2018</time>
+                        <a class="link-underline new-link" href="blog.html">Read more</a>
+                    </div>             
                 </article>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-12">
                 <article class="blog-new">
                     <img src="img/new2.jpg">
                     <a href="#" class="subtitle-description new-category">last news</a>
                     <a href="blog.html"><h5 class="new-header">September nights<br> in huge home</h5></a>
                     <p class="section-paragraph">Flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mout.
                     </p>
-                    <time datetime="<2018-05-23T08:23:11+07:00>">May 7 - 2018</time>
-                    <a class="link-underline new-link" href="blog.html">Read more</a>
+                    <div class="blog-footer">
+                        <time datetime="<2018-05-23T08:23:11+07:00>">May 7 - 2018</time>
+                        <a class="link-underline new-link" href="blog.html">Read more</a>
+                    </div>       
                 </article>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-12">
                 <article class="blog-new">
                     <img src="img/new3.jpg">
                     <a href="#" class="subtitle-description new-category">last news</a>
                     <a href="blog.html"><h5 class="new-header">September nights<br> in huge home</h5></a>
                     <p class="section-paragraph">Flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mout.
                     </p>
-                    <time datetime="<2018-05-23T08:23:11+07:00>">May 7 - 2018</time>
-                    <a class="link-underline new-link" href="blog.html">Read more</a>
-                </article>
+                    <div class="blog-footer">
+                        <time datetime="<2018-05-23T08:23:11+07:00>">May 7 - 2018</time>
+                        <a class="link-underline new-link" href="blog.html">Read more</a>
+                    </div>     
+               </article>
             </div>
         </div>
     </div>

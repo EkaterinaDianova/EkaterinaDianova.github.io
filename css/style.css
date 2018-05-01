@@ -553,11 +553,8 @@
         border: none;
     }
 
-    .about-border-img {
+    .border-img {
         border-radius: 6px;
-        transition: all 0.3s ease;
-        animation-duration: .7s;
-        animation-delay: .7s;
     }
     /*Service*/
 
@@ -608,39 +605,35 @@
     .video-about {
         position: relative;
         background-color: #000000;
+        overflow: hidden;
+        min-height: 600px;
+    }
+
+    .border-img-video {
+        border-radius: 6px;
     }
 
     .video-foreground {
         position: absolute;
         height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
-        padding-bottom: 625px;
-        background-size: cover;
-    }
-
-    .videoIframe {
-        position: absolute;
-        top: 0;
-        bottom: 0;
         right: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
+        bottom: 0;
+        background-size: cover !important;
     }
 
-    .videoPoster {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .video-about iframe {
         width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        border: none text-indent: -999em;
-        overflow: hidden;
+        height: auto;
+        border: none;
+    }
+
+    .videoPlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
         opacity: 1;
         -webkit-transition: opacity 800ms, height 0s;
         -moz-transition: opacity 800ms, height 0s;
@@ -651,11 +644,11 @@
         border: none;
     }
 
-    .videoPoster:hover {
+    .videoPlay:hover {
         cursor: pointer;
     }
 
-    .videoPoster:before {
+    .videoPlay:before {
         content: '';
         position: absolute;
         top: 50%;
@@ -670,7 +663,7 @@
         transition: border-color 300ms;
     }
 
-    .videoPoster:after {
+    .videoPlay:after {
         content: '';
         position: absolute;
         top: 50%;
@@ -686,22 +679,14 @@
         transition: border-color 300ms;
     }
 
-    .videoPoster:hover:before,
-    .videoPoster:focus:before {
+    .videoPlay:hover:before,
+    .videoPlay:focus:before {
         border-color: #b99275;
     }
 
-    .videoPoster:hover:after,
-    .videoPoster:focus:after {
+    .videoPlay:hover:after,
+    .videoPlay:focus:after {
         border-left-color: #b99275;
-    }
-
-    .videoWrapperActive .videoPoster {
-        opacity: 0;
-        height: 0;
-        -webkit-transition-delay: 0s, 800ms;
-        -moz-transition-delay: 0s, 800ms;
-        transition-delay: 0s, 800ms;
     }
 
     .video-text {
@@ -1230,16 +1215,13 @@
             font-size: 38px;
         }
 
-        .about-border-img {
+        .border-img {
             height: 100%;
+            width: 100%;
         }
 
         .about-us-text {
             margin-top: 20px;
-        }
-
-        .about-border-img {
-            width: 100%;
         }
 
         .serv-wrapper {
@@ -1335,7 +1317,7 @@
             margin: auto;
         }
 
-        .about-border-img {
+        .border-img {
             margin-top: 40px;
         }
 
@@ -1422,6 +1404,7 @@
         .section-paragraph {
             text-align: center;
             font-size: 14px;
+            padding: 0 25px;
         }
 
         .about-us-text {
@@ -1432,20 +1415,62 @@
             margin: auto;
         }
 
-        .about-border-img {
+        .border-img {
             margin-top: 40px;
+        }
+
+        .services {
+            padding-bottom: 57px;
         }
 
         .serv-wrapper {
             margin-bottom: 20px;
         }
 
-        .videoPoster {
-            height: 53%;
+        .video-center {
+            padding-bottom: 57px;
         }
 
-        .video-foreground {
-            padding-bottom: 600px;
+        .portfolio {
+            padding-top: 57px;
+            padding-bottom: 57px;
+        }
+
+        .portfolio-text {
+            margin-bottom: 45px;
+        }
+
+        .grid-portfolio {
+            margin-top: 15px;
+        }
+
+        .grid-sizer {
+            width: 100%;
+        }
+
+        .reviews-inner {
+            padding: 40px 20px;
+        }
+
+        .blog-text {
+            margin: 0;
+        }
+
+        .blog-new {
+            text-align: center;
+            margin: 25px 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .new-header {
+            margin-bottom: 20px;
+        }
+
+        .blog-footer {
+            align-items: center;
+            width: 100%;
         }
 
         }
@@ -1523,7 +1548,7 @@
             margin: auto;
         }
 
-        .about-border-img {
+        .border-img {
             margin-top: 40px;
         }
 

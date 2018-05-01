@@ -17,10 +17,10 @@ $(document).ready(function(){
     Youtube Player
   -------------------------------------------------------------------------------*/
 
-$(document).on('click','.js-videoPoster',function(e) {
+$(document).on('click','.videoPlay',function(e) {
   e.preventDefault();
   var poster = $(this);
-  var wrapper = poster.closest('.js-videoWrapper');
+  var wrapper = poster.closest('.video-foreground');
   videoPlay(wrapper);
 });
 
@@ -94,6 +94,17 @@ $('#filters a').click(function(){
   return false;
 });
 
+
+$('#filters a').click(function(){
+    $('.button-group .is-cheked').removeClass('is-cheked');
+    $(this).closest('a').addClass('is-cheked');
+    var selector = $(this).attr('data-filter');
+    var $container = $('.grid-portfolio');
+      $container.isotope({ 
+        filter: selector,
+    });
+  return false;
+});
 
 /*-------------------------------------------------------------------------------
     Portfolio Item Hover
