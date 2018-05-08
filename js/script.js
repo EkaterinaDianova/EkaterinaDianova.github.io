@@ -3,7 +3,7 @@
     Review Carousel
   -------------------------------------------------------------------------------*/
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $(".carousel-reviews").owlCarousel({
   	loop: true,
   	items: 1,
   	smartSpeed: 700,
@@ -12,6 +12,19 @@ $(document).ready(function(){
   	navText: ['<span class="ion-ios-arrow-left"></span>', '<span class="ion-ios-arrow-right"></span>'],
   }
   	);
+
+  /*-------------------------------------------------------------------------------
+    About Carousel
+  -------------------------------------------------------------------------------*/
+$(document).ready(function(){
+  $(".about-carousel").owlCarousel({
+     loop:true,
+     items:1,
+     smartSpeed: 700,
+     dots: true, 
+     nav: false,
+  });
+});
 
 /*-------------------------------------------------------------------------------
     Youtube Player
