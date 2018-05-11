@@ -237,7 +237,6 @@
         color: #ffffff;
     }
 
-
     .logo-header a:hover,
     .logo-header a:focus {
         text-decoration: none;
@@ -1177,7 +1176,13 @@
     .scroll-top:hover {
         transform: translateY(-10px);
     }
-    /* Responsive styles */
+
+
+   /*-------------------------------------------------------------------------------
+    Responsive styles 
+    -------------------------------------------------------------------------------*/
+
+
     /* Large desktops and laptops */
 
     @media (min-width: 1200px) {
@@ -1190,6 +1195,8 @@
             flex-wrap: nowrap;
         }
     }
+
+
     /* Portrait tablets and medium desktops */
 
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -1217,7 +1224,6 @@
             display: none;
         }
 
-
         .new-header {
             font-size: 26px;
         }
@@ -1226,7 +1232,10 @@
             height: 98%;
         }
     }
+
+
     /* Portrait tablets and small desktops */
+
 
     @media (min-width: 768px) and (max-width: 991px) {
 
@@ -1294,8 +1303,6 @@
         width: 50%;
       }
 
-
-
         .owl-nav {
             display: none;
         }
@@ -1304,13 +1311,11 @@
             font-size: 22px;
         }
 
-
-
-
     }
 
 
     /* Landscape phones and portrait tablets */
+
 
     @media (min-width: 576px) and (max-width: 767px) {
 
@@ -1374,9 +1379,18 @@
             text-align: center;
         }
 
+        .section-lead {
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+
         .section-paragraph {
             text-align: center;
-            font-size: 13px;
+            font-size: 15px;
+        }
+
+        .section-intro {
+            margin-bottom: 0;
         }
 
         .btn-wrapper {
@@ -1389,15 +1403,61 @@
 
         .serv-wrapper {
             margin-bottom: 20px;
+            justify-content: center;
         }
 
-        .videoPoster {
-            height: 53%;
+        .video-center {
+            padding-bottom: 57px;
+            padding-top: 50px;
         }
 
-        .video-foreground {
-            padding-bottom: 300px;
+        .project-item {
+          width: 100%;
         }
+
+        .review-content {
+            padding: 25px;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+
+         .blog-new {
+            text-align: center;
+            margin-bottom: 60px;
+            display: flex;
+            align-self: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .new-header {
+            margin-bottom: 20px;
+        }
+
+        .blog-footer {
+            align-items: center;
+            width: 100%;
+        }
+
+        .new-link {
+            float: none;
+            margin-left: 5px;
+        }
+
+        .list-block {
+            margin-bottom: 40px;
+        }
+
+        .follow-block {
+             text-align: center;
+        }
+
+        .copyright-text {
+            text-align: center;
+        }
+
     }
 
     @media (max-width: 576px) {
@@ -1446,7 +1506,7 @@
         }
 
         .main-title {
-            font-size: 61px;
+            font-size: 50px;
         }
 
         .intro-description {
@@ -1464,7 +1524,7 @@
         }
 
         .section-title {
-            font-size: 40px;
+            font-size: 38px;
             text-align: center;
         }
 
@@ -1490,12 +1550,9 @@
             margin-top: 40px;
         }
 
-        .services {
-            padding-bottom: 57px;
-        }
-
         .serv-wrapper {
             margin-bottom: 20px;
+            justify-content: center;
         }
 
         .serv-wrapper .section-paragraph {
@@ -1504,6 +1561,7 @@
 
         .video-center {
             padding-bottom: 57px;
+            padding-top: 50px;
         }
 
         .portfolio {
@@ -1523,8 +1581,8 @@
             width: 100%;
         }
 
-        .reviews-inner {
-            padding: 40px 20px;
+        .review-content {
+            padding: 25px;
         }
 
         .blog {
@@ -1537,7 +1595,7 @@
 
         .blog-new {
             text-align: center;
-            margin-top: 25px;
+            margin-bottom: 60px;
             display: flex;
             align-self: center;
             flex-wrap: wrap;
@@ -1558,6 +1616,8 @@
             margin-left: 5px;
         }
     }
+
+
     /* Landscape phones and smaller */
 
     @media (max-width: 480px) {
@@ -1566,13 +1626,8 @@
             display: none;
         }
 
-
         .main-navigation {
             padding: 26px 25px 20px;
-        }
-
-        .navbar-contact {
-            display: none;
         }
 
         .toggle-mnu {
@@ -1606,11 +1661,12 @@
         }
 
         .main-title {
-            font-size: 61px;
+            font-size: 50px;
         }
 
         .intro-description {
-            font-size: 18px;
+            font-size: 16px;
+            padding: 0px 15px;
         }
 
         .subtitle-description {
@@ -1618,8 +1674,9 @@
         }
 
         .section-title {
-            font-size: 40px;
+            font-size: 35px;
             text-align: center;
+            padding: 0px 19px;
         }
 
         .section-paragraph {
@@ -1639,13 +1696,10 @@
             margin-bottom: 20px;
         }
 
-        .videoPoster {
-            height: 53%;
-        }
-
-        .video-foreground {
-            padding-bottom: 300px;
-        }
+        .video-text {
+            margin-top: 20px;
+            padding: 0px 55px;
+        }     
     }
 
     @media (min-width: 320px) and (max-width: 414px) {
@@ -1661,9 +1715,16 @@
         .intro-description {
             font-size: 15px;
         }
+
+        .owl-nav {
+            display: none;
+        }
+
     }
+
+
     /*-------------------------------------------------------------------------------
-     2: Post Image 
+     2: Post Single 
      -------------------------------------------------------------------------------*/
 
     .main-header-inner {
@@ -1770,22 +1831,6 @@
         letter-spacing: 2px;
         color: #999999;
     }
-    /*Form Comment*/
-
-    .post-comment-content {
-        margin-top: 88px;
-    }
-
-    .post-control {
-        border: 1px solid #e1e1e1;
-    }
-
-    .post-comment-group {
-        margin-bottom: 20px;
-        width: 100%;
-        display: flex;
-    }
-    /*Post Footer*/
 
     .post-content-footer {
         display: flex;
@@ -1831,7 +1876,75 @@
     .post-news-list {
         margin-top: 50px;
     }
-    /* 3:  Grid Image*/
+
+    .comments {
+        margin-bottom: 55px;
+    }
+
+    .post-comment-list {
+        margin-top: 30px;
+    }
+
+    .post-comment-list li {
+        padding: 40px;
+        border: 1px solid #e1e1e1;
+        border-bottom: none;    
+    }
+
+    .post-comment-list li:first-child {
+        border-radius: 4px 4px 0px 0px;
+    }
+
+     .post-comment-list li:last-child {
+        border-bottom: 1px solid #e1e1e1;
+        border-radius: 0px 0px 4px 4px;
+     }
+       
+    .post-comment-list {
+       background-color: #f7f7f7;   
+    }
+
+    .comment-avatar img {
+        height: 64px;
+        width: 64px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .comment-name {
+        font-size: 14px;
+    }
+
+    .post-comment-list .section-paragraph {
+        margin: 0;
+        font-size: 14px;
+    }
+
+        /*Form Comment*/
+
+     .post-comment-form {
+        margin-top: 30px;
+     }
+
+    .post-comment-content {
+        margin-top: 88px;
+    }
+
+    .post-control {
+        border: 1px solid #e1e1e1;
+    }
+
+    .post-comment-group {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+    }
+
+
+     /*-------------------------------------------------------------------------------
+     3: Blog Grid (Image)
+     -------------------------------------------------------------------------------*/
+
 
     .content-blog {
         padding-top: 111px;
@@ -1863,7 +1976,11 @@
         border-color: #b99275;
         border-radius: 50px;
     }
-    /* 4: Blog Grid */
+
+
+    /*-------------------------------------------------------------------------------
+     4: Blog Grid (Image)
+     -------------------------------------------------------------------------------*/
 
     .grid-wrapper {
         display: flex;
@@ -2039,7 +2156,10 @@
     }
 
 
-    /* 5: About Page*/
+    /*-------------------------------------------------------------------------------
+     4: About Page
+     -------------------------------------------------------------------------------*/
+
 
     .about-intro {
         padding-top: 111px;
@@ -2189,21 +2309,27 @@
         margin-top: 80px;
     }
 
-    .team-row {
-        margin-top: -30px;
+    .about-team .section-lead {
+        margin: 0;
+    }
+
+    .about-team .section-intro {
+        margin-bottom: 40px;
     }
 
     .about-team-info {
-        margin-top: 30px;
+        padding: 30px 0px;
         position: relative;
         animation-duration: 1s;
-        animation-delay: .5s;
+        animation-delay: .5s;  
+        overflow: hidden;
     }
 
     .about-team-info img {
         object-fit: cover;
         width: 286px;
-        height: 355px;
+        height: 286px;
+        border-radius: 6px;
     }
 
     .about-team-info:hover .about-hover-wrapper {
@@ -2229,19 +2355,8 @@
     }
 
     .about-team-name {
-        position: relative;
-        padding: 14px 0;
-    }
-
-    .about-team-name::before {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 2px;
-        top: 0px;
-        left: 50%;
-        margin-left: -21px;
-        background-color: #b99275;
+        margin-top: 20px;
+        text-align: center;
     }
 
     .about-team-name h6 {
@@ -2253,9 +2368,10 @@
     }
 
     .about-team-name p {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         margin: 0;
+        color: #6a6d6f;
     }
 
     .about-subscribe {
@@ -2266,43 +2382,29 @@
         align-items: center;
         text-align: center;
         position: relative;
-        background-color: #252525;
+       background-color: #f7f7f7;
+       border-top: 1px solid #e1e1e1;
+       background-position: 50% 50%;
         -webkit-background-size: cover;
         background-size: cover;
         z-index: 10;
     } 
 
-    /*.about-subscribe:after {
-        content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 0;
-    }*/
-
-    .about-subscribe .section-title {
-        color: #fff;
-        z-index: 10;
-    }
-
-    .about-subscribe .section-lead {
-        color: #fff;
-        z-index: 10;
-    }
-
-    .about-subscribe .btn-white {
+    .about-subscribe .btn-gold{
         z-index: 10;
         margin-top: 30px;
     }
 
-   
-
     .about-subscribe .section-intro {
         margin: 0;
     }
+
+    .subscribe-title {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    
+    .about-subscribe 
 
     .form-center {
         height: 100%;
