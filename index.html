@@ -382,12 +382,18 @@
                     <div class="success-modal">
                         <span>Congratulations! Your message has been sent.</span>
                     </div>
+                     <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
                     <div class="modal-header">
                         <button class="close" type="button" data-dismiss="modal">×</button>
                         <h4 class="modal-title">Get your number here</h4>
                     </div>
                     <div class="modal-body">Welcome back, just write your phone and we call in 5 minute</div>
                     <form id="call-form" method="post" action="mail.php" role="form">
+                        <div class="messages"></div>
                         <!-- Hidden Required Fields -->
                         <input type="hidden" name="project_name" value="Site Name">
                         <!--Your site name-->
